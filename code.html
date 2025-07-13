@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tulsi Schools - Excellence in Education</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        
+        .hero-image {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f5be1b7d-f6d8-46b3-acc8-5ec5d1b0719d.png');
+            background-size: cover;
+            background-position: center;
+            transition: all 0.3s ease;
+        }
+        
+        .hero-image:hover {
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://placehold.co/1920x1080');
+        }
+        
+        .facility-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header with Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2d8df402-218e-4327-9f9f-d9f7dfe12328.png" alt="Tulsi Schools logo featuring an open book with a tulsi leaf emblem representing education and nature" class="h-12 mr-3">
+                    <h1 class="text-2xl font-bold text-green-700">TULSI SCHOOLS</h1>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-green-600 font-medium">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-green-600 font-medium">About Us</a>
+                    <div class="dropdown relative">
+                        <button class="text-gray-700 hover:text-green-600 font-medium flex items-center">
+                            Academics <i class="fas fa-chevron-down ml-1 text-sm"></i>
+                        </button>
+                        <div class="dropdown-menu absolute hidden bg-white mt-2 py-2 w-48 rounded-md shadow-lg">
+                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Curriculum</a>
+                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Programs</a>
+                            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Faculty</a>
+                        </div>
+                    </div>
+                    <a href="#facilities" class="text-gray-700 hover:text-green-600 font-medium">Facilities</a>
+                    <a href="#contact" class="text-gray-700 hover:text-green-600 font-medium">Contact</a>
+                </nav>
+                
+                <button class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-image h-96 flex items-center justify-center text-white">
+        <div class="text-center px-4">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Nurturing Minds, Shaping Futures</h2>
+            <p class="text-xl md:text-2xl mb-8">At Tulsi Schools, we provide holistic education for tomorrow's leaders</p>
+            <a href="#contact" class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-md font-medium transition duration-300 inline-block">Enquire Now</a>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="bg-green-50 p-8 rounded-lg text-center">
+                    <div class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-graduation-cap text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-green-700">Quality Education</h3>
+                    <p class="text-gray-600">State-of-the-art curriculum aligned with global education standards</p>
+                </div>
+                <div class="bg-blue-50 p-8 rounded-lg text-center">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-child text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-blue-700">Holistic Development</h3>
+                    <p class="text-gray-600">Focus on academic, physical, and emotional growth</p>
+                </div>
+                <div class="bg-amber-50 p-8 rounded-lg text-center">
+                    <div class="bg-amber-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-amber-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-amber-700">Experienced Faculty</h3>
+                    <p class="text-gray-600">Dedicated and qualified teachers guiding each student</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">About Tulsi Schools</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Our Legacy of Excellence</h3>
+                    <p class="text-gray-600 mb-4">Founded in 1995, Tulsi Schools has been at the forefront of providing quality education that combines academic rigor with character development.</p>
+                    <p class="text-gray-600 mb-4">Our vision is to create a learning environment that fosters curiosity, creativity, and critical thinking while nurturing traditional values.</p>
+                    <p class="text-gray-600 mb-6">With a student-teacher ratio of 15:1, we ensure personalized attention to each child's learning journey.</p>
+                    <a href="#" class="text-green-600 font-medium hover:text-green-700 flex items-center">
+                        Read More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/dd11bc10-49b9-4231-9e71-70200391b67f.png" alt="Modern school building with glass facade and green spaces, students walking between bright classrooms with sunlight streaming in" class="w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academics Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Academic Programs</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c12e1047-cd77-451f-a236-4e753fef1180.png" alt="Elementary students in colorful classroom engaged in hands-on learning activities with smiling teacher" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Primary School</h3>
+                        <p class="text-gray-600 mb-4">Grades 1-5: Building strong foundations through experiential learning</p>
+                        <a href="#" class="text-green-600 font-medium hover:text-green-700">Learn More</a>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a896a033-67ce-4f71-afc1-882a540966ea.png" alt="Middle school science lab with students conducting experiments wearing safety goggles" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Middle School</h3>
+                        <p class="text-gray-600 mb-4">Grades 6-8: Encouraging exploration and critical thinking</p>
+                        <a href="#" class="text-green-600 font-medium hover:text-green-700">Learn More</a>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/98ef741e-1f46-458f-95df-030327308555.png" alt="High school students in discussion with teacher in well-equipped classroom with digital smart board" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">High School</h3>
+                        <p class="text-gray-600 mb-4">Grades 9-12: Preparing students for college and beyond</p>
+                        <a href="#" class="text-green-600 font-medium hover:text-green-700">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Facilities</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="facility-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Science Labs</h3>
+                    <p class="text-gray-600">Fully-equipped modern laboratories for hands-on learning</p>
+                </div>
+                <div class="facility-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Library</h3>
+                    <p class="text-gray-600">10,000+ books with digital learning resources</p>
+                </div>
+                <div class="facility-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Computer Lab</h3>
+                    <p class="text-gray-600">Latest technology with 1:1 student-computer ratio</p>
+                </div>
+                <div class="facility-card bg-white p-6 rounded-lg shadow-md text-center transition duration-300">
+                    <div class="text-green-600 text-4xl mb-4">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Sports Complex</h3>
+                    <p class="text-gray-600">Olympic-size swimming pool and multiple sports facilities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-green-700 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">What Parents Say</h2>
+                <div class="w-20 h-1 bg-white mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-green-800 p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-300 text-xl mr-1">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="mb-6">"My child has flourished academically and socially at Tulsi Schools. The teachers truly care about each student's success."</p>
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4b3d6fe0-c2be-4117-af65-07470ef11d56.png" alt="Smiling mother portrait with short brown hair and glasses, wearing a blue blouse" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Mrs. Sharma</h4>
+                            <p class="text-green-200 text-sm">Parent of Grade 4 Student</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-green-800 p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-300 text-xl mr-1">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="mb-6">"The balance between academics and extracurricular activities is perfect. My son is always excited to go to school."</p>
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e37770c0-d7ce-4796-9dd1-5c5fee602240.png" alt="Confident father with dark hair and beard wearing a formal shirt" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Mr. Patel</h4>
+                            <p class="text-green-200 text-sm">Parent of Grade 7 Student</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-green-800 p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-300 text-xl mr-1">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="mb-6">"The values-based education along with academic excellence makes Tulsi Schools stand out from others."</p>
+                    <div class="flex items-center">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0e4323cc-9ae8-4b61-b0a6-740da1f13b1d.png" alt="Elegant mother with long black hair in traditional indian attire, smiling warmly" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Mrs. Iyer</h4>
+                            <p class="text-green-200 text-sm">Parent of Grade 10 Student</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Contact Us</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Get In Touch</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt text-green-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Address</h4>
+                                <p class="text-gray-600">123 Education Avenue, Knowledge City, 560001</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone-alt text-green-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Phone</h4>
+                                <p class="text-gray-600">+91 98765 43210 (Admissions Office)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope text-green-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Email</h4>
+                                <p class="text-gray-600">admissions@tulsischools.edu</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-clock text-green-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Office Hours</h4>
+                                <p class="text-gray-600">Monday to Friday: 8:30 AM - 4:30 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Send Us a Message</h3>
+                    <form class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500 focus:border-green-500"></textarea>
+                        </div>
+                        <button type="submit" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-md font-medium w-full transition duration-300">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Tulsi Schools</h3>
+                    <p class="mb-4 text-gray-400">Providing quality education since 1995 through a balanced approach that nurtures mind, body and spirit.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Academics</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Admissions</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Facilities</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Programs</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Primary School</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Middle School</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">High School</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">After School Clubs</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Summer Programs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Newsletter</h3>
+                    <p class="mb-4 text-gray-400">Subscribe to our newsletter for the latest updates</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l-md focus:outline-none text-gray-900">
+                        <button type="submit" class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-r-md">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 Tulsi Schools. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" id="back-to-top" class="fixed bottom-6 right-6 bg-green-600 text-white w-12 h-12 rounded-full flex items-center justify-center opacity-0 invisible transition-all duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+        // Back to Top Button
+        const backToTop = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('opacity-100', 'visible');
+                backToTop.classList.remove('opacity-0', 'invisible');
+            } else {
+                backToTop.classList.remove('opacity-100', 'visible');
+                backToTop.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.querySelector('.md\\:hidden');
+        mobileMenuButton.addEventListener('click', () => {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
+
